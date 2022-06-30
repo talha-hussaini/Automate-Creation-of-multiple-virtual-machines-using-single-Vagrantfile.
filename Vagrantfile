@@ -23,7 +23,7 @@ end
 	web02.vm.box = "geerlingguy/centos7"
 	web02.vm.network "private_network", ip: "192.168.56.11"
 	web02.vm.provider "virtualbox" do |vb|
-	vb.mempry = "1024"
+	vb.memory = "1024"
 	vb.cpus = 2
  end
 web02.vm.provision "shell", inline: <<-SHELL
